@@ -1,0 +1,82 @@
+# =========================================
+# 1. SECRETS & ENVIRONMENT CONFIG
+# =========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# =========================================
+# 2. FRONTEND (Next.js & React)
+# =========================================
+node_modules/
+.next/
+out/
+build/
+dist/
+.npm
+.eslintcache
+.pnp.*
+
+# =========================================
+# 3. BACKEND (Node.js & Prisma)
+# =========================================
+# Ignore local user uploads (Multer temp files)
+server/uploads/
+uploads/
+
+# Prisma local SQLite databases (if you ever test locally)
+*.db
+*.db-journal
+
+# =========================================
+# 4. AI MICROSERVICE (Python & FastAPI)
+# =========================================
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+# Ignore downloaded AI models if saved locally
+*.pt
+*.pth
+*.onnx
+
+# =========================================
+# 5. WEB3 & SMART CONTRACTS (Hardhat/Foundry)
+# =========================================
+artifacts/
+cache/
+typechain/
+typechain-types/
+coverage/
+coverage.json
+broadcast/
+# Foundry specific
+cache_forge/
+out/
+
+# =========================================
+# 6. OS & EDITOR FILES
+# =========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
